@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez BERCLAU à Bujumbura : formulaire, adresse, téléphone et email." />
+  <title>Contact — BERCLAU</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="BERCLAU" class="logo__img" />
+        <span class="logo__text">BERCLAU</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" class="nav__link" data-i18n="nav.services">Services</a></li>
+          <li><a href="a-propos.html" class="nav__link" data-i18n="nav.about">À propos</a></li>
+          <li><a href="formation.html" class="nav__link" data-i18n="nav.training">Formation</a></li>
+          <li><a href="contact.html" class="nav__link active" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang">
+          <button class="lang__btn" data-lang="fr">🇫🇷 FR</button>
+          <button class="lang__btn" data-lang="en">🇬🇧 EN</button>
+          <button class="lang__btn" data-lang="rn">🇧🇮 RN</button>
+        </div>
+        <a href="contact.html" class="btn btn--primary nav__cta" data-i18n="nav.cta">Demander un devis</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero__tag" data-i18n="contactPage.tag">Contact</span>
+      <h1 class="page-hero__title" data-i18n="contactPage.title">Parlons de votre projet</h1>
+      <p class="page-hero__subtitle" data-i18n="contactPage.subtitle">Notre équipe vous répond sous 24h ouvrées.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section">
+    <div class="container contact__grid">
+
+      <div class="contact__info">
+        <div class="contact__item">
+          <i data-icon="mapPin"></i>
+          <div>
+            <strong data-i18n="contact.address.title">Adresse</strong>
+            <p data-i18n="contact.address.value">Bujumbura - Burundi, Mukaza-Rohero, Avenue de la Mission, Galerie Beriko Bureau No A6</p>
+          </div>
+        </div>
+        <div class="contact__item">
+          <i data-icon="phone"></i>
+          <div>
+            <strong data-i18n="contact.phone.title">Téléphone</strong>
+            <p>+257 77 825 067<br>+257 62 827 837<br>+257 61 093 412</p>
+          </div>
+        </div>
+        <div class="contact__item">
+          <i data-icon="mail"></i>
+          <div>
+            <strong data-i18n="contact.email.title">Email</strong>
+            <p><a href="mailto:berclaubdi@gmail.com">berclaubdi@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact__socials">
+          <a href="#" aria-label="Facebook"><i data-icon="facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i data-icon="instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-icon="linkedin"></i></a>
+        </div>
+
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps?q=Bujumbura+Rohero+Avenue+de+la+Mission&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- ===== FORMULAIRE FORMSPREE ===== -->
+      <!-- 🔽 Remplace VOTRE_ID_FORMSPREE par ton ID Formspree -->
+      <form class="contact__form" id="contactForm"
+            action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+        <input type="hidden" name="_subject" value="Nouveau message depuis la page Contact BERCLAU" />
+        <input type="hidden" name="_language" value="fr" />
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <div class="form-group">
+          <label for="name" data-i18n="form.name">Nom complet</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email" data-i18n="form.email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone" data-i18n="form.phone">Téléphone (optionnel)</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <div class="form-group">
+          <label for="subject" data-i18n="form.subject">Sujet</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="form.message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" data-i18n="form.send">Envoyer le message</button>
+        <p class="form__note" id="formNote"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="index.html" class="logo logo--light">
+          <img src="images/logo.svg" alt="BERCLAU" class="logo__img" />
+          <span class="logo__text">BERCLAU</span>
+        </a>
+        <p data-i18n="footer.desc">Cabinet comptable agréé au Burundi. Comptabilité, fiscalité, audit, conseil et formation.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i data-icon="facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i data-icon="instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-icon="linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.links">Liens rapides</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="a-propos.html" data-i18n="nav.about">À propos</a></li>
+          <li><a href="formation.html" data-i18n="nav.training">Formation</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.services">Services</h4>
+        <ul>
+          <li><a href="services.html" data-i18n="services.s1.title">Tenue de comptabilité</a></li>
+          <li><a href="services.html" data-i18n="services.s2.title">Déclarations fiscales</a></li>
+          <li><a href="services.html" data-i18n="services.s3.title">Gestion de la paie</a></li>
+          <li><a href="services.html" data-i18n="services.s4.title">Audit & commissariat</a></li>
+          <li><a href="services.html" data-i18n="services.s5.title">Juridique & social</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul class="footer__contact">
+          <li><i data-icon="mapPin"></i> Bujumbura, Burundi</li>
+          <li><i data-icon="phone"></i> +257 77 825 067</li>
+          <li><i data-icon="mail"></i> berclaubdi@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> BERCLAU. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+        <ul>
+          <li><a href="mentions.html" data-i18n="footer.legal">Mentions légales</a></li>
+          <li><a href="#" data-i18n="footer.privacy">Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Haut de page">↑</button>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/icons.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/pages-i18n.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

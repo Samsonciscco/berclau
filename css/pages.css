@@ -1,0 +1,173 @@
+/* =========================================================
+   BERCLAU — Styles des pages internes
+   ========================================================= */
+
+/* ---------- Page hero ---------- */
+.page-hero {
+  padding: 160px 0 80px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  text-align: center;
+}
+.page-hero__tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.page-hero__title {
+  font-family: var(--font-title);
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-hero__subtitle {
+  font-size: 1.05rem;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- Service détail ---------- */
+.service-detail { padding: 70px 0; }
+.service-detail--alt { background: var(--light); }
+.service-detail__head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+.service-detail__icon {
+  width: 64px; height: 64px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 16px;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.35);
+}
+.service-detail__head h2 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); margin-bottom: 6px; }
+.service-detail__head p { color: var(--gray); }
+
+.service-detail__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 32px;
+}
+.service-detail__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.98rem;
+}
+.service-detail__list li i {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* ---------- CTA band ---------- */
+.cta-band {
+  background: var(--dark);
+  color: var(--white);
+  padding: 70px 0;
+}
+.cta-band__inner { text-align: center; }
+.cta-band h2 { color: var(--white); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 12px; }
+.cta-band p { opacity: 0.85; margin-bottom: 26px; }
+
+/* ---------- Équipe ---------- */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+.team-card {
+  text-align: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+.team-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+.team-card img {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 18px;
+  border: 4px solid var(--primary-light);
+}
+.team-card h3 { font-size: 1.05rem; margin-bottom: 4px; }
+.team-card p { color: var(--primary-dark); font-size: 0.9rem; font-weight: 500; }
+
+/* ---------- Formation ---------- */
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+.training-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.training-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px; height: 100%;
+  background: var(--primary);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: var(--transition);
+}
+.training-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+.training-card:hover::before { transform: scaleY(1); }
+.training-card__icon {
+  width: 52px; height: 52px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border-radius: 12px;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+}
+.training-card h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.training-card p { color: var(--gray); margin-bottom: 16px; font-size: 0.95rem; }
+.training-card ul { padding-top: 14px; border-top: 1px solid var(--border); }
+.training-card ul li { font-size: 0.88rem; color: var(--gray); margin-bottom: 6px; padding-left: 18px; position: relative; }
+.training-card ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* ---------- Responsive pages ---------- */
+@media (max-width: 1024px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .training-grid { grid-template-columns: 1fr; }
+  .service-detail__list { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .page-hero { padding: 130px 0 60px; }
+  .service-detail__head { flex-direction: column; text-align: center; }
+  .team-grid { grid-template-columns: 1fr; }
+}

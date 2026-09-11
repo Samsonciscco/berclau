@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez BERCLAU, cabinet comptable à Bujumbura : notre histoire, notre équipe et nos valeurs." />
+  <title>À propos — BERCLAU</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="BERCLAU" class="logo__img" />
+        <span class="logo__text">BERCLAU</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" class="nav__link" data-i18n="nav.services">Services</a></li>
+          <li><a href="a-propos.html" class="nav__link active" data-i18n="nav.about">À propos</a></li>
+          <li><a href="formation.html" class="nav__link" data-i18n="nav.training">Formation</a></li>
+          <li><a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang">
+          <button class="lang__btn" data-lang="fr">🇫🇷 FR</button>
+          <button class="lang__btn" data-lang="en">🇬🇧 EN</button>
+          <button class="lang__btn" data-lang="rn">🇧🇮 RN</button>
+        </div>
+        <a href="contact.html" class="btn btn--primary nav__cta" data-i18n="nav.cta">Demander un devis</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero__tag" data-i18n="aboutPage.tag">À propos</span>
+      <h1 class="page-hero__title" data-i18n="aboutPage.title">Un cabinet engagé à vos côtés</h1>
+      <p class="page-hero__subtitle" data-i18n="aboutPage.subtitle">Depuis notre création, nous mettons notre expertise au service des entreprises burundaises et internationales.</p>
+    </div>
+  </section>
+
+  <!-- ===================== HISTOIRE ===================== -->
+  <section class="section">
+    <div class="container about__inner">
+      <div class="about__media">
+        <!-- 🔽 Remplace par une photo de bureau -->
+        <img src="images/bureau.jpg" alt="Bureau BERCLAU" />
+      </div>
+      <div class="about__text">
+        <span class="section__tag" data-i18n="aboutPage.story.tag">Notre histoire</span>
+        <h2 class="section__title" data-i18n="aboutPage.story.title">Une expertise burundaise, une vision internationale</h2>
+        <p data-i18n="aboutPage.story.p1">Fondé à Bujumbura, BERCLAU est né de la volonté d'offrir aux entreprises locales et internationales un accompagnement comptable de haut niveau, adapté aux réalités du terrain.</p>
+        <p data-i18n="aboutPage.story.p2">Notre équipe pluridisciplinaire maîtrise parfaitement les réglementations de l'OBR, de l'INSS et le droit des affaires burundais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VALEURS ===================== -->
+  <section class="section why">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag" data-i18n="aboutPage.values.tag">Nos valeurs</span>
+        <h2 class="section__title" data-i18n="aboutPage.values.title">Ce qui nous guide au quotidien</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why-card">
+          <div class="why-card__icon"><i data-icon="award"></i></div>
+          <h3 data-i18n="aboutPage.values.v1.title">Excellence</h3>
+          <p data-i18n="aboutPage.values.v1.desc">Nous visons la rigueur et la précision dans chaque mission.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i data-icon="handshake"></i></div>
+          <h3 data-i18n="aboutPage.values.v2.title">Confiance</h3>
+          <p data-i18n="aboutPage.values.v2.desc">Une relation transparente et durable avec chacun de nos clients.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i data-icon="lock"></i></div>
+          <h3 data-i18n="aboutPage.values.v3.title">Confidentialité</h3>
+          <p data-i18n="aboutPage.values.v3.desc">La protection de vos données est une priorité absolue.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i data-icon="target"></i></div>
+          <h3 data-i18n="aboutPage.values.v4.title">Proximité</h3>
+          <p data-i18n="aboutPage.values.v4.desc">Nous restons disponibles et à votre écoute à chaque étape.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ÉQUIPE ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag" data-i18n="aboutPage.team.tag">Notre équipe</span>
+        <h2 class="section__title" data-i18n="aboutPage.team.title">Des experts à votre service</h2>
+        <p class="section__subtitle" data-i18n="aboutPage.team.subtitle">Comptables, fiscalistes, juristes — une équipe complète et complémentaire.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="images/team1.jpg" alt="Membre 1" />
+          <h3 data-i18n="aboutPage.team.m1.name">Nom Prénom</h3>
+          <p data-i18n="aboutPage.team.m1.role">Directeur associé</p>
+        </div>
+        <div class="team-card">
+          <img src="images/team2.jpg" alt="Membre 2" />
+          <h3 data-i18n="aboutPage.team.m2.name">Nom Prénom</h3>
+          <p data-i18n="aboutPage.team.m2.role">Expert-comptable</p>
+        </div>
+        <div class="team-card">
+          <img src="images/team3.jpg" alt="Membre 3" />
+          <h3 data-i18n="aboutPage.team.m3.name">Nom Prénom</h3>
+          <p data-i18n="aboutPage.team.m3.role">Juriste d'entreprise</p>
+        </div>
+        <div class="team-card">
+          <img src="images/team4.jpg" alt="Membre 4" />
+          <h3 data-i18n="aboutPage.team.m4.name">Nom Prénom</h3>
+          <p data-i18n="aboutPage.team.m4.role">Fiscaliste</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="section cta-band">
+    <div class="container cta-band__inner">
+      <h2 data-i18n="aboutPage.cta.title">Envie de travailler avec nous ?</h2>
+      <p data-i18n="aboutPage.cta.desc">Prenons contact et discutons de votre projet.</p>
+      <a href="contact.html" class="btn btn--primary" data-i18n="aboutPage.cta.btn">Contactez-nous</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="index.html" class="logo logo--light">
+          <img src="images/logo.svg" alt="BERCLAU" class="logo__img" />
+          <span class="logo__text">BERCLAU</span>
+        </a>
+        <p data-i18n="footer.desc">Cabinet comptable agréé au Burundi. Comptabilité, fiscalité, audit, conseil et formation.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i data-icon="facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i data-icon="instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-icon="linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.links">Liens rapides</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="a-propos.html" data-i18n="nav.about">À propos</a></li>
+          <li><a href="formation.html" data-i18n="nav.training">Formation</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.services">Services</h4>
+        <ul>
+          <li><a href="services.html" data-i18n="services.s1.title">Tenue de comptabilité</a></li>
+          <li><a href="services.html" data-i18n="services.s2.title">Déclarations fiscales</a></li>
+          <li><a href="services.html" data-i18n="services.s3.title">Gestion de la paie</a></li>
+          <li><a href="services.html" data-i18n="services.s4.title">Audit & commissariat</a></li>
+          <li><a href="services.html" data-i18n="services.s5.title">Juridique & social</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul class="footer__contact">
+          <li><i data-icon="mapPin"></i> Bujumbura, Burundi</li>
+          <li><i data-icon="phone"></i> +257 77 825 067</li>
+          <li><i data-icon="mail"></i> berclaubdi@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> BERCLAU. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+        <ul>
+          <li><a href="mentions.html" data-i18n="footer.legal">Mentions légales</a></li>
+          <li><a href="#" data-i18n="footer.privacy">Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Haut de page">↑</button>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/icons.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/pages-i18n.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

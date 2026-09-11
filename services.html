@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Services comptables, fiscaux, juridiques et de conseil de BERCLAU au Burundi." />
+  <title>Nos Services — BERCLAU</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="BERCLAU" class="logo__img" />
+        <span class="logo__text">BERCLAU</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" class="nav__link active" data-i18n="nav.services">Services</a></li>
+          <li><a href="a-propos.html" class="nav__link" data-i18n="nav.about">À propos</a></li>
+          <li><a href="formation.html" class="nav__link" data-i18n="nav.training">Formation</a></li>
+          <li><a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang">
+          <button class="lang__btn" data-lang="fr">🇫🇷 FR</button>
+          <button class="lang__btn" data-lang="en">🇬🇧 EN</button>
+          <button class="lang__btn" data-lang="rn">🇧🇮 RN</button>
+        </div>
+        <a href="contact.html" class="btn btn--primary nav__cta" data-i18n="nav.cta">Demander un devis</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero__tag" data-i18n="servicesPage.tag">Nos services</span>
+      <h1 class="page-hero__title" data-i18n="servicesPage.title">Une gamme complète de services pour votre entreprise</h1>
+      <p class="page-hero__subtitle" data-i18n="servicesPage.subtitle">Comptabilité, fiscalité, audit, juridique, conseil — découvrez tout ce que BERCLAU peut faire pour vous.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CATÉGORIE 1 ===================== -->
+  <section class="section service-detail">
+    <div class="container">
+      <div class="service-detail__head">
+        <div class="service-detail__icon"><i data-icon="calculator"></i></div>
+        <div>
+          <h2 data-i18n="servicesPage.cat1.title">Comptabilité & Fiscalité</h2>
+          <p data-i18n="servicesPage.cat1.desc">Une gestion rigoureuse de vos comptes et de vos obligations fiscales.</p>
+        </div>
+      </div>
+      <ul class="service-detail__list">
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat1.i1">Tenue de comptabilité générale et analytique</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat1.i2">Révision et redressement des comptes</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat1.i3">Déclarations fiscales : OBR, TVA, IS, IR</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat1.i4">Optimisation fiscale</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat1.i5">Certification de déclaration</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat1.i6">Calcul IRE (Impôt sur le Revenu d'Emploi)</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== CATÉGORIE 2 ===================== -->
+  <section class="section service-detail service-detail--alt">
+    <div class="container">
+      <div class="service-detail__head">
+        <div class="service-detail__icon"><i data-icon="users"></i></div>
+        <div>
+          <h2 data-i18n="servicesPage.cat2.title">Social & Gestion de la paie</h2>
+          <p data-i18n="servicesPage.cat2.desc">Gérez vos équipes en toute conformité avec la réglementation burundaise.</p>
+        </div>
+      </div>
+      <ul class="service-detail__list">
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat2.i1">Gestion de la paie et bulletins de salaire</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat2.i2">Déclarations sociales (INSS)</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat2.i3">Gestion administrative du personnel</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat2.i4">Conseil en droit du travail</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== CATÉGORIE 3 ===================== -->
+  <section class="section service-detail">
+    <div class="container">
+      <div class="service-detail__head">
+        <div class="service-detail__icon"><i data-icon="shieldCheck"></i></div>
+        <div>
+          <h2 data-i18n="servicesPage.cat3.title">Audit & Juridique</h2>
+          <p data-i18n="servicesPage.cat3.desc">Sécurisez votre entreprise avec nos expertises d'audit et de droit des affaires.</p>
+        </div>
+      </div>
+      <ul class="service-detail__list">
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat3.i1">Audit externe</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat3.i2">Commissariat aux comptes</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat3.i3">Juridique et social</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat3.i4">Défense des entreprises et sociétés</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat3.i5">Création et reprise d'entreprise</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== CATÉGORIE 4 ===================== -->
+  <section class="section service-detail service-detail--alt">
+    <div class="container">
+      <div class="service-detail__head">
+        <div class="service-detail__icon"><i data-icon="trendingUp"></i></div>
+        <div>
+          <h2 data-i18n="servicesPage.cat4.title">Conseil & Services spécialisés</h2>
+          <p data-i18n="servicesPage.cat4.desc">Un accompagnement stratégique et des prestations pointues.</p>
+        </div>
+      </div>
+      <ul class="service-detail__list">
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat4.i1">Conseil en gestion et pilotage</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat4.i2">Consultance</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat4.i3">Réévaluation des biens</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat4.i4">Titres fonciers (nouveau / perdu)</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="servicesPage.cat4.i5">Formation professionnelle</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="section cta-band">
+    <div class="container cta-band__inner">
+      <h2 data-i18n="servicesPage.cta.title">Un besoin spécifique ? Parlons-en.</h2>
+      <p data-i18n="servicesPage.cta.desc">Notre équipe vous propose une solution sur mesure.</p>
+      <a href="contact.html" class="btn btn--primary" data-i18n="servicesPage.cta.btn">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="index.html" class="logo logo--light">
+          <img src="images/logo.svg" alt="BERCLAU" class="logo__img" />
+          <span class="logo__text">BERCLAU</span>
+        </a>
+        <p data-i18n="footer.desc">Cabinet comptable agréé au Burundi. Comptabilité, fiscalité, audit, conseil et formation.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i data-icon="facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i data-icon="instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-icon="linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.links">Liens rapides</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="a-propos.html" data-i18n="nav.about">À propos</a></li>
+          <li><a href="formation.html" data-i18n="nav.training">Formation</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.services">Services</h4>
+        <ul>
+          <li><a href="services.html" data-i18n="services.s1.title">Tenue de comptabilité</a></li>
+          <li><a href="services.html" data-i18n="services.s2.title">Déclarations fiscales</a></li>
+          <li><a href="services.html" data-i18n="services.s3.title">Gestion de la paie</a></li>
+          <li><a href="services.html" data-i18n="services.s4.title">Audit & commissariat</a></li>
+          <li><a href="services.html" data-i18n="services.s5.title">Juridique & social</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul class="footer__contact">
+          <li><i data-icon="mapPin"></i> Bujumbura, Burundi</li>
+          <li><i data-icon="phone"></i> +257 77 825 067</li>
+          <li><i data-icon="mail"></i> berclaubdi@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> BERCLAU. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+        <ul>
+          <li><a href="mentions.html" data-i18n="footer.legal">Mentions légales</a></li>
+          <li><a href="#" data-i18n="footer.privacy">Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Haut de page">↑</button>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/icons.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/pages-i18n.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

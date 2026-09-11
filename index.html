@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BERCLAU — Cabinet comptable à Bujumbura, Burundi. Comptabilité, fiscalité, audit, conseil et formation." />
+  <meta name="keywords" content="comptable Burundi, cabinet comptable Bujumbura, fiscalité OBR, INSS, audit, BERCLAU" />
+  <title>BERCLAU — Cabinet Comptable au Burundi</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="BERCLAU" class="logo__img" />
+        <span class="logo__text">BERCLAU</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link active" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" class="nav__link" data-i18n="nav.services">Services</a></li>
+          <li><a href="a-propos.html" class="nav__link" data-i18n="nav.about">À propos</a></li>
+          <li><a href="formation.html" class="nav__link" data-i18n="nav.training">Formation</a></li>
+          <li><a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="lang">
+          <button class="lang__btn" data-lang="fr">🇫🇷 FR</button>
+          <button class="lang__btn" data-lang="en">🇬🇧 EN</button>
+          <button class="lang__btn" data-lang="rn">🇧🇮 RN</button>
+        </div>
+
+        <a href="contact.html" class="btn btn--primary nav__cta" data-i18n="nav.cta">Demander un devis</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="accueil">
+    <div class="hero__overlay"></div>
+    <!-- 🔽 Remplace par ta photo de bureau -->
+    <img src="images/hero.jpg" alt="" class="hero__bg" />
+
+    <div class="container hero__content">
+      <span class="hero__badge" data-i18n="hero.badge">Cabinet comptable agréé • Bujumbura, Burundi</span>
+      <h1 class="hero__title" data-i18n="hero.title">Votre partenaire comptable de confiance au Burundi</h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle">
+        Comptabilité, fiscalité, audit, conseil et formation — un accompagnement sur mesure pour la réussite de votre entreprise.
+      </p>
+
+      <div class="hero__actions">
+        <a href="services.html" class="btn btn--primary" data-i18n="hero.cta1">Nos services</a>
+        <a href="contact.html" class="btn btn--ghost" data-i18n="hero.cta2">Nous contacter</a>
+      </div>
+
+      <ul class="hero__badges">
+        <li><i data-icon="check"></i> <span data-i18n="hero.badge1">Expertise reconnue</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="hero.badge2">Service trilingue</span></li>
+        <li><i data-icon="check"></i> <span data-i18n="hero.badge3">Proximité & écoute</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <span class="stat__num" data-count="10">0</span><span class="stat__plus">+</span>
+        <p data-i18n="stats.years">Années d'expérience</p>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="200">0</span><span class="stat__plus">+</span>
+        <p data-i18n="stats.clients">Clients accompagnés</p>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="15">0</span><span class="stat__plus">+</span>
+        <p data-i18n="stats.services">Services proposés</p>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="3">0</span>
+        <p data-i18n="stats.langs">Langues parlées</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag" data-i18n="services.tag">Nos services</span>
+        <h2 class="section__title" data-i18n="services.title">Une expertise complète pour votre entreprise</h2>
+        <p class="section__subtitle" data-i18n="services.subtitle">
+          Du quotidien comptable à la stratégie d'entreprise, nous couvrons tous vos besoins.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__icon"><i data-icon="calculator"></i></div>
+          <h3 data-i18n="services.s1.title">Tenue de comptabilité</h3>
+          <p data-i18n="services.s1.desc">Comptabilité générale, analytique et révision des comptes.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon"><i data-icon="fileText"></i></div>
+          <h3 data-i18n="services.s2.title">Déclarations fiscales</h3>
+          <p data-i18n="services.s2.desc">OBR, INSS, TVA, IS, IR — nous gérons toutes vos obligations.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon"><i data-icon="users"></i></div>
+          <h3 data-i18n="services.s3.title">Gestion de la paie</h3>
+          <p data-i18n="services.s3.desc">Bulletins de paie, déclarations sociales et gestion du personnel.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon"><i data-icon="shieldCheck"></i></div>
+          <h3 data-i18n="services.s4.title">Audit & commissariat</h3>
+          <p data-i18n="services.s4.desc">Audit externe, certification et commissariat aux comptes.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon"><i data-icon="scale"></i></div>
+          <h3 data-i18n="services.s5.title">Juridique & social</h3>
+          <p data-i18n="services.s5.desc">Conseil juridique, social et défense des entreprises.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon"><i data-icon="home"></i></div>
+          <h3 data-i18n="services.s6.title">Titres fonciers</h3>
+          <p data-i18n="services.s6.desc">Création, réévaluation, nouveau ou perdu — nous vous accompagnons.</p>
+        </article>
+      </div>
+
+      <div class="section__cta">
+        <a href="services.html" class="btn btn--primary" data-i18n="services.cta">Voir tous nos services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== POURQUOI NOUS ===================== -->
+  <section class="section why">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag" data-i18n="why.tag">Pourquoi nous choisir</span>
+        <h2 class="section__title" data-i18n="why.title">Un partenaire de confiance à vos côtés</h2>
+      </div>
+
+      <div class="why__grid">
+        <div class="why-card">
+          <div class="why-card__icon"><i data-icon="mapPin"></i></div>
+          <h3 data-i18n="why.c1.title">Expertise locale</h3>
+          <p data-i18n="why.c1.desc">Maîtrise parfaite de la réglementation burundaise (OBR, INSS, droit des affaires).</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i data-icon="handshake"></i></div>
+          <h3 data-i18n="why.c2.title">Accompagnement sur mesure</h3>
+          <p data-i18n="why.c2.desc">Chaque client est unique : nous adaptons nos services à vos besoins réels.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i data-icon="lock"></i></div>
+          <h3 data-i18n="why.c3.title">Confidentialité garantie</h3>
+          <p data-i18n="why.c3.desc">Vos données et documents sont traités avec la plus stricte confidentialité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== À PROPOS ===================== -->
+  <section class="section about" id="apropos">
+    <div class="container about__inner">
+
+      <div class="about__media">
+        <!-- 🔽 Remplace par ta photo d'équipe / bureau -->
+        <img src="images/equipe.jpg" alt="Équipe BERCLAU" />
+      </div>
+
+      <div class="about__text">
+        <span class="section__tag" data-i18n="about.tag">À propos de BERCLAU</span>
+        <h2 class="section__title" data-i18n="about.title">Un cabinet proche de vous, au cœur de Bujumbura</h2>
+        <p data-i18n="about.p1">
+          Situé à Mukaza-Rohero, Avenue de la Mission, Galerie Beriko (Bureau A6), BERCLAU accompagne
+          les entreprises burundaises et internationales dans toutes leurs obligations comptables,
+          fiscales et juridiques.
+        </p>
+        <p data-i18n="about.p2">
+          Notre équipe pluridisciplinaire met son expertise au service de votre croissance avec une
+          approche humaine, rigoureuse et transparente.
+        </p>
+        <a href="a-propos.html" class="btn btn--primary" data-i18n="about.cta">En savoir plus</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== TÉMOIGNAGES ===================== -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag" data-i18n="testi.tag">Témoignages</span>
+        <h2 class="section__title" data-i18n="testi.title">Ils nous font confiance</h2>
+      </div>
+
+      <div class="testimonials__grid">
+        <blockquote class="testi">
+          <p data-i18n="testi.t1.text">"Un accompagnement sérieux et réactif. BERCLAU a transformé notre gestion comptable."</p>
+          <footer>
+            <strong data-i18n="testi.t1.name">Client 1</strong>
+            <span data-i18n="testi.t1.role">Directeur, PME Bujumbura</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testi">
+          <p data-i18n="testi.t2.text">"Grâce à leur expertise fiscale, nous avons optimisé nos déclarations à l'OBR."</p>
+          <footer>
+            <strong data-i18n="testi.t2.name">Client 2</strong>
+            <span data-i18n="testi.t2.role">Gérant, Commerce</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testi">
+          <p data-i18n="testi.t3.text">"Une équipe trilingue, à l'écoute et vraiment professionnelle."</p>
+          <footer>
+            <strong data-i18n="testi.t3.name">Client 3</strong>
+            <span data-i18n="testi.t3.role">ONG internationale</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FORMATION ===================== -->
+  <section class="section formation" id="formation">
+    <div class="container formation__inner">
+      <div class="formation__text">
+        <span class="section__tag" data-i18n="form.tag">Formation</span>
+        <h2 class="section__title" data-i18n="form.title">Formez vos équipes en comptabilité et fiscalité</h2>
+        <p data-i18n="form.desc">
+          BERCLAU propose des formations professionnelles sur mesure : comptabilité, fiscalité,
+          paie, gestion d'entreprise. En français, anglais et kirundi.
+        </p>
+        <a href="formation.html" class="btn btn--primary" data-i18n="form.cta">Découvrir nos formations</a>
+      </div>
+      <div class="formation__media">
+        <!-- 🔽 Remplace par une image de formation -->
+        <img src="images/formation.jpg" alt="Formation BERCLAU" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag" data-i18n="contact.tag">Contact</span>
+        <h2 class="section__title" data-i18n="contact.title">Parlons de votre projet</h2>
+        <p class="section__subtitle" data-i18n="contact.subtitle">
+          Remplissez le formulaire ci-dessous ou contactez-nous directement.
+        </p>
+      </div>
+
+      <div class="contact__grid">
+
+        <div class="contact__info">
+          <div class="contact__item">
+            <i data-icon="mapPin"></i>
+            <div>
+              <strong data-i18n="contact.address.title">Adresse</strong>
+              <p data-i18n="contact.address.value">Bujumbura - Burundi, Mukaza-Rohero, Avenue de la Mission, Galerie Beriko Bureau No A6</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i data-icon="phone"></i>
+            <div>
+              <strong data-i18n="contact.phone.title">Téléphone</strong>
+              <p>+257 77 825 067 / +257 62 827 837 / +257 61 093 412</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i data-icon="mail"></i>
+            <div>
+              <strong data-i18n="contact.email.title">Email</strong>
+              <p><a href="mailto:berclaubdi@gmail.com">berclaubdi@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact__socials">
+            <a href="#" aria-label="Facebook"><i data-icon="facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i data-icon="instagram"></i></a>
+            <a href="#" aria-label="linkedin"><i data-icon="linkedin"></i></a>
+          </div>
+
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps?q=Bujumbura+Rohero+Avenue+de+la+Mission&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- ===== FORMULAIRE FORMSPREE ===== -->
+        <!-- 🔽 Remplace VOTRE_ID_FORMSPREE par ton ID Formspree -->
+        <form class="contact__form" id="contactForm"
+              action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+          <input type="hidden" name="_subject" value="Nouveau message du site BERCLAU" />
+          <input type="hidden" name="_language" value="fr" />
+          <input type="text" name="_gotcha" style="display:none" />
+
+          <div class="form-group">
+            <label for="name" data-i18n="form.name">Nom complet</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="form.email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone" data-i18n="form.phone">Téléphone (optionnel)</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div class="form-group">
+            <label for="subject" data-i18n="form.subject">Sujet</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="form.message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="form.send">Envoyer le message</button>
+          <p class="form__note" id="formNote"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__col">
+        <a href="index.html" class="logo logo--light">
+          <img src="images/logo.svg" alt="BERCLAU" class="logo__img" />
+          <span class="logo__text">BERCLAU</span>
+        </a>
+        <p data-i18n="footer.desc">Cabinet comptable agréé au Burundi. Comptabilité, fiscalité, audit, conseil et formation.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i data-icon="facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i data-icon="instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-icon="linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.links">Liens rapides</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="a-propos.html" data-i18n="nav.about">À propos</a></li>
+          <li><a href="formation.html" data-i18n="nav.training">Formation</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.services">Services</h4>
+        <ul>
+          <li><a href="services.html" data-i18n="services.s1.title">Tenue de comptabilité</a></li>
+          <li><a href="services.html" data-i18n="services.s2.title">Déclarations fiscales</a></li>
+          <li><a href="services.html" data-i18n="services.s3.title">Gestion de la paie</a></li>
+          <li><a href="services.html" data-i18n="services.s4.title">Audit & commissariat</a></li>
+          <li><a href="services.html" data-i18n="services.s5.title">Juridique & social</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul class="footer__contact">
+          <li><i data-icon="mapPin"></i> Bujumbura, Burundi</li>
+          <li><i data-icon="phone"></i> +257 77 825 067</li>
+          <li><i data-icon="mail"></i> berclaubdi@gmail.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> BERCLAU. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+        <ul>
+          <li><a href="mentions.html" data-i18n="footer.legal">Mentions légales</a></li>
+          <li><a href="#" data-i18n="footer.privacy">Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Haut de page">↑</button>
+
+  <!-- ===== SCRIPTS (ORDRE IMPORTANT) ===== -->
+  <script src="js/icons.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/pages-i18n.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
